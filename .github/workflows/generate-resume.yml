@@ -15,3 +15,11 @@ jobs:
         with:
           name: PDF
           path: resume/resume_KashifAhmad.pdf
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "kash15if@yahoo.com"
+          git config --global user.name "Kash15if"
+          git add .
+          git commit -m "Compiled .tex to .pdf"
+          git push origin main
