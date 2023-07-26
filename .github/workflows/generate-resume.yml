@@ -1,15 +1,22 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    branches:
+      - main   # Replace "main" with your preferred branch name
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume/resumeBuilder.tex
+          root_file_class: resume/resume.cls
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
