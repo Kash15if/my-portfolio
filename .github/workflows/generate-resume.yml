@@ -14,15 +14,15 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume/resumeBuilder.tex
-          extra_files: |     # Add the cls file here
-            resume/resume.cls
+          root_file: resume/CoverLetter.tex
+          # extra_files: |     # Add the cls file here
+          #   resume/resume.cls
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: resume/resumeBuilder.pdf
+          path: resume/cover-letter.pdf
 
       - name: Commit changes
         run: |

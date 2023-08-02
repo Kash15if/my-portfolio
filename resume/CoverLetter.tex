@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long letter 南京大学版 Nanjing University Version
+% Version 1.0 (2022-03-27)
+
+% This template was revised by Zheng-hu Nie(brian.nie@gmail.com) based on Fanchao Chen (chenfc@fudan.edu.cn).
+% This template originates from:
+% https://www.LaTeXTemplates.com
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 文档基础配置
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\newcommand\companyName{X}
+
+\newcommand\currentRole{Software Developer}
+
+\newcommand\currentCompany{Greenwave Solutions Pvt. Ltd.}
+
+\newcommand\jobRole{React.js and Node.js Developer}
+
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\ % Date
+\hfill Email: kash151if@gmail.com \\
+\hfill Radhakrishna Apartment,\\
+\hfill Pernasree Pally, Kolkata-60, WB, India \\ % Address
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Hiring Manager,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+I saw the role of 
+\jobRole\ at your company \companyName\ and I am thrilled to apply for the same. My skills and experience makes me excellet fit for this role as I will outline in more detail within this letter  
+
+
+In my current role as a \currentRole\ at \currentCompany, I led the development of an internal employee service portal, streamlining leave management, claims processing, notifications, and salary slip access. I transformed a JSF monolith into microservices using React and Spring Boot, resulting in significant page load time reduction. With around 2 years of experience in the FMCG sector, I bring technical expertise and industry knowledge to the table.
+
+
+My tech stack includes React.js, Node.js, Redux, Java, SQL, MongoDB, PostgreSQL, Docker, and more. I developed a Java application for seamless data transfer between multiple databases, automated through a scheduler.
+
+I hold a B. Tech. in Computer Science from the University of Calcutta.
+
+I am eager to contribute my skills to \companyName's success. Please find my CV attached, and I would appreciate the opportunity to discuss further during an interview. Contact me at +91 97098 13874 or kash151if@gmail.com.
+
+Thank you for considering my application.
+
+
+\bigskip % Vertical whitespace
+
+Sincerely,
+
+\vspace{20pt} % Vertical whitespace
+Kashif Ahmad
+
+\end{document}
+
+% To PIZZA, a famous fat-ass cat who lived in Dorm 12.
